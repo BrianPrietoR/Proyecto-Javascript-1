@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto con JS</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--fin slider-->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
@@ -14,10 +20,12 @@
     <section id="global">
         <!--la cabezera-->
         <header>
-            <div id="logo"><h1>Proyecto JS</h1></div>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
             <div class="clearfix"></div>
             <nav id="menu">
-                <ul >
+                <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Reloj</a></li>
                     <li><a href="#">Sobre mi</a></li>
@@ -27,7 +35,11 @@
         </header>
         <!--slider-->
         <div id="slider">
-
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg"title="Hojas" /></div>
+                <div><img src="img/cielo.jpg"title="Cielo" /></div>
+                <div><img src="img/rojo.jpg"title="Rojo" /></div>
+            </div>
         </div>
 
         <!--contenido-->
@@ -43,7 +55,7 @@
                         popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                         and more recently with desktop publishing software like Aldus PageMaker including versions of
                         Lorem Ipsum.</p>
-                        <a href="#" class="button-more">leer mas</a>
+                    <a href="#" class="button-more">leer mas</a>
                 </article>
 
                 <article class="post">
@@ -56,14 +68,14 @@
                         popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                         and more recently with desktop publishing software like Aldus PageMaker including versions of
                         Lorem Ipsum.</p>
-                        <a href="#" class="button-more">leer mas</a>
-                </article>  
-                
+                    <a href="#" class="button-more">leer mas</a>
+                </article>
+
             </div>
             <aside id="sidebar">
                 <div id="about">
                     <h4><span>¿Quien soy?</span></h4>
-                    <img src="img/caracol.jpg"/>
+                    <img src="img/caracol.jpg" />
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book.</p>
@@ -82,14 +94,14 @@
                         <label for="password">Contraseña</label><br>
                         <input type="text" name="password"><br>
 
-                        <input type="submit" value="Entrar"> 
+                        <input type="submit" value="Entrar">
                     </form>
                 </div>
             </aside>
             <div class="clearfix"></div>
         </section>
     </section>
-    <footer >
+    <footer>
         Master de JS &copy;
     </footer>
 </body>
