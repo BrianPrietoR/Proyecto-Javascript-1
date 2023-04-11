@@ -86,7 +86,7 @@ $(document).ready(function () {
     //fin de selector
 
     //Scrol arriba de la web
-    $('.subir').click(function(e){
+    $('.subir').click(function (e) {
         e.preventDefault();
 
         $('html, body').animate({
@@ -95,5 +95,38 @@ $(document).ready(function () {
         return false;
     });
     //Fin de scrioll
+
+    //login falso
+    $("#login form").submit(function () {
+        var form_name = $("#form_name").val();
+        localStorage.setItem("form_name", form_name);
+
+        var form_email = $("#form_email").val();
+        localStorage.setItem("form_email", form_email);
+    });
+
+    var form_name = localStorage.getItem("form_name");
+    var form_email = localStorage.getItem("form_email");
+
+    if (form_name != null && form_name != "undefined" || form_email != null && form_email != "undefined") {
+
+        var about_parrafo = $("#about p")
+
+        about_parrafo.html("<br/><strong>Bienvenido, " + form_name + "</strong><br/><br/>" + "E_mail: " + form_email);
+        about_parrafo.append("<br><br><a href='#' id='logout'>Cerrar Sesión</a>");
+
+        $("#login").hide();
+
+        $("#logout").click(function () {
+            localStorage.removeItem("form_name");
+            localStorage.removeItem("form_email");
+
+            location.reload();
+        });
+
+    };
+
+
+    //fin login falso
 
 });
