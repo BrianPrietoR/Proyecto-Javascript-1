@@ -1,0 +1,19 @@
+body {
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed;
+}
+
+#logo {
+    background: #CA3413;
+}
+
+/*efecto del menu*/
+#menu ul li:hover{
+    background: #CA3413;
+}
+/*end efecto menu*/
+
+
+.button-more{
+    background: #CA3413;
+}
