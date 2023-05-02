@@ -135,7 +135,29 @@ $(document).ready(function () {
     // ACORDEON
     if (window.location.href.indexOf('About') > -1) {
         $("#acordeon").accordion();
-    }; 
+    };
 
+    if (window.location.href.indexOf('reloj') > -1) {
+        setInterval(function () {
+            var reloj = moment().format("hh:mm:ss");
+            $("#reloj").html(reloj);
+        }, 1000)
+
+    };
+
+    //validacion del plugin 
+    if (window.location.href.indexOf('contacto') > -1) {
+
+        $(function () {
+            $("form input[name='date']").datepicker({
+                dateFormat: 'dd-mm-yy'
+            });
+        });
+
+
+        $.validate({
+            lang: 'es'
+        });
+    };
 
 });
