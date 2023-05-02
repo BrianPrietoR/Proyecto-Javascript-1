@@ -260,6 +260,15 @@ footer{
 }
 
 .form-error{
+    font-size: 11px;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.help-block{
     float: right;
     font-size: 11px;
     background: red;

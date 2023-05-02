@@ -156,7 +156,9 @@ $(document).ready(function () {
 
 
         $.validate({
-            lang: 'es'
+            lang: 'es',
+            errorMessagePosition: 'top',
+            scrollToTopOnError: true
         });
     };
 
